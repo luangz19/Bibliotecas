@@ -1,2 +1,3 @@
 # Bibliotecas
- Bibliotecas para Ciência de Dados
+
+Algumas biblioteca que estou aprendendo, para ajudar nas minhas aplicações matemáticas
