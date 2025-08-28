@@ -3,6 +3,19 @@ import matplotlib.animation as animation
 import numpy as np
 from scipy.integrate import solve_ivp
 
+
+def Model(t,y):
+        r = 0.1
+        return r*y
+    
+#y0 = 2
+t_span = (0,20)
+t = np.linspace(0,20,1000)
+sol = [solve_ivp(Model,t_span,[y0],t_eval=t) for y0 in [1,2]]
+
+
+
+plt.style.use("dark_background")
 fig = plt.figure()
 ax = plt.axes(xlim=(0, 20), ylim=(0, 15))
 line1, = ax.plot([],[],lw=2)
@@ -14,16 +27,6 @@ def init():
     return line1,line2,
 
 def animate(i):
-
-    def Model(t,y):
-        r = 0.1
-        return r*y
-    
-    #y0 = 2
-    t_span = (0,20)
-    t = np.linspace(0,20,1000)
-    sol = [solve_ivp(Model,t_span,[y0],t_eval=t) for y0 in [1,2]]
-
     x1 = sol[0].t[:i]
     y1 = sol[0].y[0][:i]
 
