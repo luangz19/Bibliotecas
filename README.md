@@ -1,6 +1,6 @@
 # Bibliotecas
 
-Algumas biblioteca que estou aprendendo, para ajudar nas minhas aplicações matemáticas como:
+Algumas biblioteca que estou aprendendo, para ajudar nas minhas aplicações matemática. Por exemplo:
 
 *Animações com Matplotlib*
 <p align="center">
