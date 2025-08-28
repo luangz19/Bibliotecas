@@ -1,4 +1,4 @@
-# Bibliotecas
+# Bibliotecas para modelagem matemática 
 
 Algumas biblioteca que estou aprendendo, para ajudar nas minhas aplicações matemática. Por exemplo:
 
